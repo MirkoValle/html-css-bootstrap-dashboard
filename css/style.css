@@ -14,3 +14,10 @@ ul {
 .my-bg-grey {
     background-color: #e5e5e5;
 }
+
+header.left {
+    background-color: #051e34;
+    color: white;
+    height: calc(100vh - 58.5px);
+    background-image: url(../img/sidebar-bg.png);
+}

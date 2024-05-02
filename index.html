@@ -24,9 +24,9 @@
     <header class="top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid d-flex flex-row">
-                <a class="navbar-brand navbar-expand-lg" href="#">
-                    <img class="my-logo-big d-none d-md-inline" src="./img/logo.svg" alt="logo boolean">
-                    <img class="my-logo-mobile d-md-none " src="./img/mobile-logo.png" alt="logo boolean" width="40px">
+                <a class="navbar-brand navbar-expand-lg p-0" href="#">
+                    <img class="my-logo-big d-none d-lg-inline" src="./img/logo.svg" alt="logo boolean">
+                    <img class="my-logo-mobile d-lg-none " src="./img/mobile-logo.png" alt="logo boolean" width="40px">
                 </a>
 
                 <form class="d-flex me-auto flex-grow-1" role="search">
@@ -66,8 +66,27 @@
         </nav>
     </header>
 
-    <div class="my-major-conteiner">
-        <header class="left"></header>
+    <div class="my-major-conteiner d-flex">
+        <header class="left py-4 d-flex flex-column justify-content-between">
+
+            <div>
+                <ul class="d-flex flex-column align-items-center px-4">
+                    <li class="d-flex align-items-center w-100 pb-3"><i class="fa-solid fa-house w-100  pb-2"></i>
+                        <p class="d-none d-lg-inline m-0 ps-3">Home</p>
+                    </li>
+                    <li class="d-flex align-items-center w-100 pb-3"><i class="fa-solid fa-chart-simple  pb-2"></i>
+                        <p class="d-none d-lg-inline m-0 ps-4">Stats</p>
+                    </li>
+                    <li class="d-flex align-items-center w-100 pb-3"><i class="fa-solid fa-signal  pb-2"></i>
+                        <p class="d-none d-lg-inline m-0 ps-3">Signal</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center w-100 pb-3 px-4">
+                <i class="fa-solid fa-gear pt-2"></i>
+                <p class="d-none d-lg-inline m-0 ps-3">Admin</p>
+            </div>
+        </header>
 
         <main></main>
     </div>
