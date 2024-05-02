@@ -18,6 +18,11 @@ ul {
 header.left {
     background-color: #051e34;
     color: white;
-    height: calc(100vh - 58.5px);
+    height: calc(100vh - 56px);
     background-image: url(../img/sidebar-bg.png);
+}
+
+.my-bg-azzurro {
+    background-color: #1b72e8;
+    color: white;
 }
