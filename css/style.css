@@ -1,0 +1,16 @@
+ul {
+    list-style: none;
+}
+
+.my-bell-color {
+    color: #ff8e00;
+}
+
+.my-bell-btn {
+    border: none;
+    background: none;
+}
+
+.my-bg-grey {
+    background-color: #e5e5e5;
+}
