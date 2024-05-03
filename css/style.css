@@ -26,3 +26,11 @@ header.left {
     background-color: #1b72e8;
     color: white;
 }
+
+div #breadcrumbs p {
+    background-color: #1652a59f;
+    margin-right: .2rem;
+    padding: 0 .5rem .2rem .5rem;
+    border-radius: 16px;
+    font-size: .8rem;
+}

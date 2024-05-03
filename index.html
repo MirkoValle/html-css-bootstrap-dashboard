@@ -8,6 +8,12 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Fontawesome 6.5.2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -22,11 +28,11 @@
 <body>
 
     <header class="top">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid d-flex flex-row">
-                <a class="navbar-brand navbar-expand-lg p-0" href="#">
-                    <img class="my-logo-big d-none d-lg-inline" src="./img/logo.svg" alt="logo boolean">
-                    <img class="my-logo-mobile d-lg-none " src="./img/mobile-logo.png" alt="logo boolean" width="40px">
+                <a class="navbar-brand navbar-expand-md p-0" href="#">
+                    <img class="my-logo-big d-none d-md-inline" src="./img/logo.svg" alt="logo boolean">
+                    <img class="my-logo-mobile d-md-none " src="./img/mobile-logo.png" alt="logo boolean" width="40px">
                 </a>
 
                 <form class="d-flex me-auto flex-grow-1" role="search">
@@ -72,43 +78,78 @@
             <div>
                 <ul class="d-flex flex-column align-items-center px-4">
                     <li class="d-flex align-items-center w-100 pb-3"><i class="fa-solid fa-house w-100  pb-2"></i>
-                        <p class="d-none d-lg-inline m-0 ps-3">Home</p>
+                        <p class="d-none d-md-inline m-0 ps-3">Home</p>
                     </li>
                     <li class="d-flex align-items-center w-100 pb-3"><i class="fa-solid fa-chart-simple  pb-2"></i>
-                        <p class="d-none d-lg-inline m-0 ps-4">Stats</p>
+                        <p class="d-none d-md-inline m-0 ps-4">Stats</p>
                     </li>
                     <li class="d-flex align-items-center w-100 pb-3"><i class="fa-solid fa-signal  pb-2"></i>
-                        <p class="d-none d-lg-inline m-0 ps-3">Signal</p>
+                        <p class="d-none d-md-inline m-0 ps-3">Signal</p>
                     </li>
                 </ul>
             </div>
             <div class="d-flex align-items-center w-100 pb-3 px-4">
                 <i class="fa-solid fa-gear pt-2"></i>
-                <p class="d-none d-lg-inline m-0 ps-3">Admin</p>
+                <p class="d-none d-md-inline m-0 ps-3">Admin</p>
             </div>
         </header>
 
-        <main>
-            <section id="nav-main" class="my-bg-azzurro px-3 py-4">
-                <div class="d-flex align-items-center">
-                    <p class="m-0">Nuovo Studente</p>
-                    <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+        <main class="w-100">
+            <section id="header-main" class="container-fluid my-bg-azzurro px-3 py-4">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center order-md-2 align-items-md-start">
+                        <p class="m-0 pe-3">Nuovo Studente</p>
 
-                </div>
-                <div>
-                    <div class="d-flex align-items-end">
-                        <h2 class="m-0">Boolean</h2>
-                        <p class="m-0">Piano blaze</p>
+                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Some text as placeholder. In real life you can have the elements you have chosen.
+                                    Like, text, images, lists, etc.
+                                </div>
+                                <div class="dropdown mt-3">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown">
+                                        Dropdown button
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="d-flex">
-                        <p>3 app</p>
-                        >>
-                        <p>+</p>
+                    <div class="col-12 col-md-4 col-lg-6" id="breadcrumbs">
+                        <div class="d-flex align-items-end mb-2">
+                            <h2 class="m-0 pe-2">Boolean</h2>
+                            <p class="m-0">Piano blaze</p>
+                        </div>
+                        <div class="d-flex">
+                            <p class="mb-0">3 app</p>
+                            <span class="pe-2">&#187;</span>
+                            <p class="d-lg-none mb-0">+</p>
+                            <p class="d-none d-lg-inline mb-0">Boolean mobile app</p>
+                            <p class="d-none d-lg-inline mb-0">Boolean web app</p>
+                            <p class="d-none d-lg-inline mb-0">Boolean blog app</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <p>Studenti online negli ultimi 30 minuti</p>
-                    <h2>125</h2>
+                    <div class="col-12 col-md-3">
+                        <p class="mb-2">Studenti online negli ultimi 30 minuti</p>
+                        <h2>125</h2>
+                    </div>
                 </div>
             </section>
         </main>
