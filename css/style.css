@@ -34,3 +34,40 @@ div #breadcrumbs p {
     border-radius: 16px;
     font-size: .8rem;
 }
+
+main td img {
+    width: 1.7rem;
+    margin-right: .8rem;
+}
+
+table {
+    font-size: .8rem;
+}
+
+table .my-label-green {
+    background-color: #198754;
+    border-radius: 5px;
+    color: white;
+    padding: 0 .3rem .1rem .3rem;
+    font-size: .6rem;
+}
+
+table .my-label-red {
+    background-color: #dc3545;
+    border-radius: 5px;
+    color: white;
+    padding: 0 .3rem .1rem .3rem;
+    font-size: .6rem;
+}
+
+table .my-label-yellow {
+    background-color: #ffc007;
+    border-radius: 5px;
+    color: white;
+    padding: 0 .3rem .1rem .3rem;
+    font-size: .6rem;
+}
+
+td button {
+    font-size: .2rem;
+}
