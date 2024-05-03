@@ -105,32 +105,112 @@
                             data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             <i class="fa-solid fa-plus"></i>
                         </button>
-
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                        <div class="offcanvas offcanvas-end  " tabindex="-1" id="offcanvasExample"
                             aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body">
-                                <div>
-                                    Some text as placeholder. In real life you can have the elements you have chosen.
-                                    Like, text, images, lists, etc.
+                            <div class="offcanvas-body container-fluid">
+                                <div class="row mb-3">
+                                    <div class="col-12 col-lg-6">
+                                        <label for="basic-url" class="form-label">Nome</label>
+                                        <input type="text" class="form-control px-0" aria-label="Cognome">
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <label for="basic-url" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control px-0" aria-label="Nome">
+                                    </div>
                                 </div>
-                                <div class="dropdown mt-3">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown">
-                                        Dropdown button
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+
+                                <div class="row mb-3">
+                                    <div class="col-12 col-lg-6">
+                                        <label for="basic-url" class="form-label">Email</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control" aria-label="email"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <label for="basic-url" class="form-label">Password</label>
+                                        <input type="password" class="form-control px-0" aria-label="Password">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12 col-lg-6">
+                                        <label for="basic-url" class="form-label">Indirizzo Email</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control" aria-label="email"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <label for="basic-url" class="form-label">Password</label>
+                                        <input type="password" class="form-control px-0" aria-label="Password">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label for="basic-url" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control px-0" aria-label="Indirizzo">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12 col-lg-6">
+                                        <label for="basic-url" class="form-label">Citt&agrave;</label>
+                                        <input type="text" class="form-control px-0" aria-label="Citta">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <label for="basic-url" class="form-label">Stato</label>
+                                        <select class="form-select" id="inputGroupSelect01">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Vaticano</option>
+                                            <option value="3">San Marino</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-12 col-lg-2">
+                                        <label for="basic-url" class="form-label">CAP</label>
+                                        <input type="text" class="form-control px-0" aria-label="cap">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label for="basic-url" class="form-label">Foto</label>
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="form-control" id="inputGroupFile04"
+                                                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Seleziona per proseguire
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-primary">Salva</button>
+                                        <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
 
                     </div>
                     <div class="col-12 col-md-4 col-lg-6" id="breadcrumbs">
@@ -155,11 +235,11 @@
             </section>
 
             <!-- !main content -->
-            <section id="content" class="container-fluid">
+            <section id="content" class="container-fluid py-4">
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <!-- classi -->
-                        <div class="col-12">
+                        <div class="col-12 pb-4">
                             <div class="card">
                                 <h3 class="card-header">Prossime classi</h3>
                                 <div class="card-body">
@@ -286,7 +366,7 @@
 
                         </div>
                         <!-- faq -->
-                        <div class="col-12">
+                        <div class="col-12 pb-4 pb-lg-0">
                             <div class="card">
                                 <h3 class="card-header">F.A.Q.</h3>
                                 <div class="card-body">
@@ -341,7 +421,7 @@
 
                     <div class="col-12 col-lg-4">
                         <!-- to do -->
-                        <div class="col-12">
+                        <div class="col-12 pb-4">
                             <div class="card">
                                 <h3 class="card-header">Todo</h3>
                                 <div class="card-body">
@@ -355,7 +435,7 @@
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
                                             checked>
                                         <label class="form-check-label" for="flexCheckChecked">
-                                            Lezione su Bootstrap 5 in classe #75
+                                            Lezione su Bootstrap 5 in classe #127
                                         </label>
                                     </div>
                                     <div class="form-check">
@@ -372,10 +452,22 @@
                             <div class="card">
 
                                 <div class="card-body">
-                                    <h3 class="card-title">Special title treatment</h3>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <div class="card" style="width: 100%;">
+                                        <img src="img/stats.jpeg" class="card-img-top" alt="statistiche">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Utenti attivi</h5>
+                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo
+                                                mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Gennaio: 1200</li>
+                                            <li class="list-group-item">Febbraio: 800</li>
+                                            <li class="list-group-item">Marzo: 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

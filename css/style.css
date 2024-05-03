@@ -77,3 +77,15 @@ table .my-label-yellow {
 td button {
     font-size: .2rem;
 }
+
+#offcanvasExample {
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    #offcanvasExample {
+        width: 50%;
+    }
+}
