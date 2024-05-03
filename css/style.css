@@ -74,8 +74,18 @@ table .my-label-yellow {
     font-size: .6rem;
 }
 
-td button {
-    font-size: .2rem;
+td .btn {
+    font-size: .8rem;
+    height: 1.5rem;
+    width: 1rem;
+    position: relative;
+}
+
+
+td i {
+    position: absolute;
+    top: 5px;
+    left: 7px;
 }
 
 #offcanvasExample {
